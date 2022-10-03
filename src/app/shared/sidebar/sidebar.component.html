@@ -1,0 +1,13 @@
+<h2>Sidebar</h2>
+<hr />
+
+<ul class="list-group">
+  <li
+    class="list-group-item pointer"
+    *ngFor="let item of sidebarMenu"
+    [routerLink]="[item.ruta]"
+    routerLinkActive="active"
+  >
+    {{ item.texto }}
+  </li>
+</ul>
